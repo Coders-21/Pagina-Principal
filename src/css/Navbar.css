@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(117.92deg, #006551 3.51%, rgba(0, 171, 143, 0.9) 48.6%, #006551 86.28%);
+
+}
+
+.NavList {
+    position: absolute;
+    width: 84px;
+    height: 650px;
+    left: -20px;
+    top: 215px;
+    color: #fff;
+    list-style: none;
+    z-index: 2;
+
+}
+
+.card {
+    margin-left: 4px;
+}
+
+
+
+.NavSvg{
+    z-index: 1;
+    position: relative;
+    width: 90px;
+    margin-left: -10px;
+}

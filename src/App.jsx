@@ -1,14 +1,19 @@
-import { NavBar } from "./Navbar";
-import {CardsInfo} from "./CardsInfo";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import "./css/Navbar.css"
+import { NavBar } from "./components/Navbar.jsx";
+import {CardsInfo} from "./components/CardsInfo.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
+import NavBarsvg from "./img/NavBar.svg";
+
 export function App(){
     return <div>
         <header>
             <h1>Coders 21</h1>
         </header>
-        <nav>
+        <div>
             <NavBar/>
-        </nav>
+            <img className="NavSvg" src={NavBarsvg} alt="pepe"/>
+        </div>
         <main>
             <CardsInfo/>
         </main>
