@@ -5,7 +5,8 @@ export function CardsInfo(){
     return(
         <div>
             <div>
-                <div class="card mb-3">                   
+                <div class="card mb-3">       
+                    <img className="card-img-top" src="https://culturacientifica.com/app/uploads/2016/07/universdad.jpg" alt="Card image cap"/>            
                     <div className="card-body">
                         <h5 className="card-title">Estas buscando contenido sobre las materias?</h5>
                         <p className="card-text">Conoce nuestro Drive donde tenemos los

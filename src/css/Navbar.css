@@ -1,18 +1,36 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 body {
     background: linear-gradient(117.92deg, #006551 3.51%, rgba(0, 171, 143, 0.9) 48.6%, #006551 86.28%);
-
+    font-family: inter;
 }
 
 .NavList {
     position: absolute;
     width: 84px;
     height: 650px;
-    left: -20px;
-    top: 215px;
+    left: -25px;
+    top: 85px;
     color: #fff;
     list-style: none;
     z-index: 2;
+    font-size: 12px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px #0000006e;
+    text-align: center;
+    justify-content:space-between;
+}
 
+.NavList img{
+    width: 45px;
+}
+
+.NavList li{
+    margin-top: 30px;
 }
 
 .card {
@@ -22,6 +40,7 @@ body {
 
 
 .NavSvg{
+    margin-top: -40px;
     z-index: 1;
     position: relative;
     width: 90px;

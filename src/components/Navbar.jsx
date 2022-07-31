@@ -7,7 +7,7 @@ export function NavBar(){
     return(
         
         <ul className="NavList">
-            <li> <img src={ModalidadImg} alt="modalidad" /> Modalidad</li>
+            <li><img src={ModalidadImg} alt="modalidad" /> Modalidad</li>
             <li><img src={DiscordImg} alt="discord" />Discord</li>
             <li><img src={YoutubeImg} alt="modalidad" />Youtube</li>
             <li><img src={PlanImg} alt="modalidad" />Plan de Estudio</li>

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "./css/Navbar.css"
+import "./css/index.css"
 import { NavBar } from "./components/Navbar.jsx";
 import {CardsInfo} from "./components/CardsInfo.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -8,7 +9,7 @@ import NavBarsvg from "./img/NavBar.svg";
 export function App(){
     return <div>
         <header>
-            <h1>Coders 21</h1>
+            <h1 className='Title'>Coders 21</h1>
         </header>
         <div>
             <NavBar/>

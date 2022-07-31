@@ -8,6 +8,10 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: inter;
+}
+
+.Title {
+  color: #fff;
+  text-align: center;
 }
