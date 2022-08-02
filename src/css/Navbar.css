@@ -1,7 +1,13 @@
 @import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
 }
 
 body {
@@ -14,7 +20,6 @@ body {
     width: 84px;
     height: 650px;
     left: -25px;
-    top: 85px;
     color: #fff;
     list-style: none;
     z-index: 2;
@@ -22,15 +27,32 @@ body {
     font-weight: 600;
     text-shadow: 1px 1px 2px #0000006e;
     text-align: center;
-    justify-content:space-between;
+    justify-content: space-between;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.NavList img{
+.NavList img {
     width: 45px;
 }
 
-.NavList li{
-    margin-top: 30px;
+.NavList li {
+    padding: 10px;
+    margin: 5px;
+    transition: all;
+    animation: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.NavList li:hover {
+    animation: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.4s;
+    border-radius: 10px;
+    margin-left: 10px;
+    background: #dbd0d036;
 }
 
 .card {
@@ -39,10 +61,58 @@ body {
 
 
 
-.NavSvg{
-    margin-top: -40px;
+.NavSvg {
     z-index: 1;
     position: relative;
     width: 90px;
     margin-left: -10px;
+}
+
+.coders21-container {
+    margin: 0px 25px 0px 200px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10rem;
+}
+
+
+
+.coders21-container>div:nth-child(2) {
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
+
+.card-img,
+.card-img-top {
+    overflow: clip;
+    max-height: 300px;
+    aspect-ratio: 16/9;
+}
+
+
+.coders21-container>div:nth-child(2) .card-img-top {
+    overflow: clip;
+    max-height: none;
+    aspect-ratio: initial;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .coders21-container {
+        margin: 0px 25px 0px 100px;
+        grid-template-columns: 1fr;
+    }
+
+    .coders21-container>div:nth-child(2) {
+        grid-area: auto;
+    }
+}
+
+
+.card-body{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
 }
